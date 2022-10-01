@@ -1,0 +1,517 @@
+/* Контейнер*/
+
+.container{
+    margin: 0 auto;
+    position: relative;
+    width: 1920px;
+    height: 1792px;
+    background-color: white;
+}
+
+/* Голова */
+
+.head{
+    width: 100%;
+    height: 48px;
+    background-color: rgb(231, 239, 10);
+    box-shadow: 0 1px 2px 1px gray;
+    position: relative;
+}
+
+.blog-work{
+    position: absolute;
+    left: 367px;
+    top: 8px;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+/* Навигация */
+
+.nav{
+    width: 100%;
+    height: 48px;
+    box-shadow: 0 1px 2px 1px gray;
+    display: flex;
+}
+
+.double-block1{
+    width: 47%;
+}
+
+.double-block2{
+    width: 53%;
+    font-size: 15px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.inside-link{
+    height: 15px;
+    display: inline-block;
+    text-decoration: none;
+    color: blueviolet;
+    padding: 0 20px 0 20px;
+}
+
+.for-input{
+    margin: 5px 30px;
+    box-shadow: inset 0 5px 9px -5px;
+    width: 350px;
+    height: 40px;
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    
+}
+
+.image-for-input{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+.input{
+    width: 275px;
+    height: 30px;
+    position: absolute;
+    left: 50px;
+    top: 8px;
+    border: none;
+    outline: none;
+}
+
+/* Боди */
+
+.body{
+    width: 1185px;
+    height: 1607px;
+    position: absolute;
+    left: 367px;
+    top: 135px;
+    display: grid;
+    gap: 10px;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "grig_box1 grig_box1 grig_box2 grig_box3"
+                         "grig_box1 grig_box1 grig_box4 grig_box5"
+                         "grig_box6 grig_box6 grig_box7 grig_box7"
+                         "grig_box8 grig_box8 grig_box9 grig_box9"
+                         "grig_box10 grig_box10 grig_box11 grig_box11";
+}
+
+.box{
+    background-color: #fff;
+    box-shadow: 0px 1px 2px 1px gray;
+    border-radius: 5px;
+}
+
+.grid_box1{
+    grid-area: grig_box1;
+}
+
+.grid_box2{
+    grid-area: grig_box2;
+}
+
+.grid_box3{
+    grid-area: grig_box3;
+}
+
+.grid_box4{
+    grid-area: grig_box4;
+}
+
+.grid_box5{
+    grid-area: grig_box5;
+}
+
+.grid_box6{
+    grid-area: grig_box6;
+}
+
+.grid_box7{
+    grid-area: grig_box7;
+}
+
+.grid_box8{
+    grid-area: grig_box8;
+}
+
+.grid_box9{
+    grid-area: grig_box9;
+}
+
+.grid_box10{
+    grid-area: grig_box10;
+}
+
+.grid_box11{
+    grid-area: grig_box11;
+}
+
+/* Блок 1*/
+
+.grid_box1{
+    width: 100%;
+    height: 625px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img_box1{
+    width: 100%;
+}
+
+.header_block{
+    display: block;
+    text-transform: capitalize;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: absolute;
+    left: 15px;
+    top: 350px;
+}
+
+.paragraph_box1{
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 95%;
+    height: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.paragraph_box:after{
+    content: "...";
+}
+
+.text_block1{
+    align-self: flex-start;
+    text-decoration: none;
+    font-size: 18px;
+    color: blueviolet;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.sale_block1{
+    align-self: flex-end;
+    text-decoration: none;
+    color: rgb(10, 227, 104);
+    font-size: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0 10px 10px 30px;
+
+}
+
+.bottom_block{
+    width: 95%;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.btn_block_bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 10px 5px 10px;
+}
+
+.btn_block1{
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+
+.plus{
+    align-self: flex-end;
+    color: chartreuse;
+    margin: 0 5px 20px 10px;
+    font-size: 18px;
+    text-align: center;
+    border: none;
+    background-color: #fff;
+    box-shadow:  0 1px 2px 0px rgb(100, 96, 97);
+    border-radius: 15px;
+    width: 30px;
+    height: 30px;
+    padding: 3px;
+}
+
+.minus{
+    align-self: flex-end;
+    color: rgb(250, 1, 51);
+    margin: 0 10px 20px 5px;
+    font-size: 18px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow:  0 1px 2px 0px rgb(100, 96, 97);
+    border: none;
+    border-radius: 15px;
+    width: 30px;
+    height: 30px;
+    padding: 3px;
+}
+
+/* Блок 2, 3, 4, 5 */
+
+.block_2stupen{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.header_block_box2{
+    width: 100%;
+    display: block;
+    justify-content: flex-start;
+    position: absolute;
+    left: 15px;
+    top: 105px;
+    text-transform: capitalize;
+    font-size: 20px;
+}
+
+.paragraph_box2{
+    width: 95%;
+    margin: 10px 15px;
+    padding: 10px 5px 0 0;
+    display: block;
+    justify-content: center;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.paragraph_box2:after{
+    content: "...";
+}
+
+.bottom_block2{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.text_block2{
+    display: block;
+    margin: 0 0 0 5px;
+    text-decoration: none;
+    color: blueviolet;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.btn_block_bottom2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    margin: 0 0 10px 0;
+}
+
+.sale_block2{
+    text-decoration: none;
+    color: rgb(10, 227, 104);
+    font-size: 35px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.plus2{
+    align-self: flex-end;
+    color: chartreuse;
+    margin: 0 5px 5px 10px;
+    font-size: 18px;
+    text-align: center;
+    border: none;
+    background-color: #fff;
+    box-shadow:  0 1px 2px 0px rgb(100, 96, 97);
+    border-radius: 15px;
+    width: 30px;
+    height: 30px;
+    padding: 3px;
+}
+
+.minus2{
+    align-self: flex-end;
+    color: rgb(250, 1, 51);
+    margin: 0 10px 5px 5px;
+    font-size: 18px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow:  0 1px 2px 0px rgb(100, 96, 97);
+    border: none;
+    border-radius: 15px;
+    width: 30px;
+    height: 30px;
+    padding: 3px;
+}
+
+/* Блок 6, 7, 8, 9, 10, 11 */
+
+.block_3stupen{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.img_box3{
+    height: 100%;
+    width: 100%;
+}
+
+.type2_block3{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    position: absolute;
+    left: 270px;
+    top: 0;
+}
+
+.header_block3{
+    margin: 10px 0 0 0 ; 
+    padding: 0;
+    text-transform: capitalize;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   
+}
+
+.paragraph_block3{
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.paragraph_box3{
+    margin: 10px 0;
+}
+
+.paragraph_box3:after{
+    content: "...";
+}
+
+.bottom_block3{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.left_bottom_block3{
+    width: 100%;
+    height: 100%;
+}
+
+.text_block3{
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 18px;
+    color: blueviolet;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+.right_bottom_block3{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.sale_block3{
+    display: block;
+    text-decoration: none;
+    color: rgb(10, 227, 104);
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0 0 15px 0;
+}
+
+.plus3{
+    align-self: flex-end;
+    color: chartreuse;
+    margin: 0 5px 25px 10px;
+    font-size: 18px;
+    text-align: center;
+    border: none;
+    background-color: #fff;
+    box-shadow:  0 1px 2px 0px rgb(100, 96, 97);
+    border-radius: 15px;
+    width: 30px;
+    height: 30px;
+    padding: 3px;
+}
+
+.minus3{
+    align-self: flex-end;
+    color: rgb(250, 1, 51);
+    margin: 0 10px 25px 5px;
+    font-size: 18px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow:  0 1px 2px 0px rgb(100, 96, 97);
+    border: none;
+    border-radius: 15px;
+    width: 30px;
+    height: 30px;
+    padding: 3px;
+}
+
+.btn_bottom{
+    position: absolute;
+    bottom: 10px;
+    left: 47%;
+    width: 150px;
+    height: 30px;
+}
+
+.yellow_btn{
+    text-transform: capitalize;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 1px 2px 1px lightgray;
+    background-color: rgb(241, 253, 109);
+}
+
+.btn_bottom2{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 200px;
+    height: 30px;
+}
+
+.up_arrow{
+    width: 10px;
+    height: 10px;
+}
+
+.btn_right{
+    text-transform: capitalize;
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 1px 2px 1px lightgray;
+}
